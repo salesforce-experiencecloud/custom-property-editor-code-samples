@@ -1,5 +1,0 @@
-:host {
-    background-color: var(--dxp-g-root);
-    justify-content: var(--dxp-c-l-text-alignment, center);
-    display: block;
-}
