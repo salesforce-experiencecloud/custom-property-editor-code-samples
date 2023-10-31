@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+       <target>lightningCommunity__Default</target>
+   </targets>
+   <targetConfigs>
+       <targetConfig targets="lightningCommunity__Default">
+        <!--Article Content-->
+        <property type="String" name="articleTitle" label="Article Title" default="Article Title here"/>
+        <property type="String" name="articleDate" label="Date Updated" default="mm/dd/yyyy" />
+        <property type="String" name="articleContent" label="Content" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " />
+
+        <!--Style Properties-->
+        <property type="String" name="textAlignment" label="Text Alignment" datasource="Left,Center,Right" default="Left"/>
+        <property type="Color" name="backgroundColor" label="Background Color" />
+
+        <!--Layout Properties-->
+        <property type="String" name="borderStyle" label="Border Style" datasource="none,solid,dashed" default="none"/>
+        <property type="Integer" name="borderWeight" label="Border Weight (px)" />
+        <property type="Integer" name="borderRadius" label="Border Radius (px)" />
+        <property type="Integer" name="layoutHeight" label="Layout Height" />
+        <property type="Integer" name="layoutWidth" label="Layout Width" />
+
+
+        </targetConfig>
+   </targetConfigs>
+   <masterLabel>Article with No CPE</masterLabel>
+</LightningComponentBundle>

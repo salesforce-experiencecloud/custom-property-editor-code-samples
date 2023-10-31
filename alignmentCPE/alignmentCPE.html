@@ -1,0 +1,12 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <label>Text Alignment</label>
+    <div>
+        <lightning-button-group onclick={handleAlignmentClick}>
+            <template for:each={buttons} for:item="button">
+                <lightning-button-icon-stateful key={button.value} value={button.value} selected={button.selected}
+                    icon-name={button.icon}></lightning-button-icon-stateful>
+            </template>
+        </lightning-button-group>
+    </div>
+</template>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+       <target>lightningCommunity__Default</target>
+   </targets>
+   <targetConfigs>
+
+       <targetConfig targets="lightningCommunity__Default">
+        <!--Article Content-->
+        <property type="String" name="articleTitle" label="Article Title" default="Article Title here" screenResponsive="true" exposedTo="css" />
+        <property type="lightning__dateType" name="articleDate" label="Date Updated" />
+        <property type="lightning__multilineTextType" name="articleContent" label="Content" 
+        default="Lorem ipsum dolor sit amet, consectetur" screenResponsive="true" exposedTo="css" />
+
+        <!--Style Properties-->
+        <property type="String" name="textAlignment" label="Text Alignment" editor="c/alignmentCPE"/>
+        <property type="Color" name="backgroundColor" label="Background Color" />
+        
+
+        <!--Layout Properties-->
+        <property name="layoutProperties" type="c__layoutProperty" label="Layout" />
+
+        </targetConfig>
+   </targetConfigs>
+   <masterLabel>Article with CPE</masterLabel>
+</LightningComponentBundle>
