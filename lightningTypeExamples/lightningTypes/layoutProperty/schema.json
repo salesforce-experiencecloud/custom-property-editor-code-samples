@@ -1,0 +1,27 @@
+{
+  "title": "Layout Properties",
+  "lightning:type": "lightning__objectType",
+  "properties": {
+    "borderStyle": {
+        "lightning:type": "lightning__textType",
+        "title": "Border Style"
+    },
+    "borderWeight": {
+        "lightning:type": "lightning__integerType",
+        "title": "Border Weight (px)"
+    },
+    "borderRadius": {
+      "lightning:type": "lightning__integerType",
+      "title": "Border Radius (px)"
+    },
+    "layoutHeight": {
+      "lightning:type": "lightning__integerType",
+      "title": "Layout Height (px)"
+    },
+    "layoutWidth": {
+        "lightning:type": "lightning__integerType",
+        "title": "Layout Width (px)"
+    }
+  },
+  "required": []
+}
