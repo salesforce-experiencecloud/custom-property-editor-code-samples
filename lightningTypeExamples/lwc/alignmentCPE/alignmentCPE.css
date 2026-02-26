@@ -1,0 +1,4 @@
+.slds-form-element, .slds-radio_button-group {
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
